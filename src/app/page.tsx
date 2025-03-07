@@ -1,19 +1,31 @@
 "use client"
 
-import { Box, Stack, } from "@mui/material"
+import { Stack, } from "@mui/material"
 
+// Atoms
+import AboutCard from "@atoms/AboutCard";
 // Molecules
 import MainTitle from "@molecules/MainTitle";
+import SkillsPreview from "@molecules/SkillsPreview";
+
+// Organisms
+import PreviewSection from "@organisms/PreviewSection";
+
 
 
 
 
 const Home = () => {
   return (
-    <Stack direction={"column"} spacing={2} >
-      <MainTitle/>
-
-      <Box height={1000}></Box>
+    <Stack direction={"column"} >
+      <MainTitle />
+      <AboutCard />
+      <PreviewSection
+        title="Mis habilidades"
+        buttonText="Ver más"
+        content={<SkillsPreview />}
+        path="/about#skills"
+      />
     </Stack>
   )
 

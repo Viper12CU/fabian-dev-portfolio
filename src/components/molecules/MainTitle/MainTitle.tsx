@@ -21,7 +21,6 @@ const MainTitle: React.FC = () => {
                 src="/mainTitle-backgrond.jpg"
                 alt="Background"
                 fill
-
             />
             <Box sx={boxStyle}>
                 <PresentationModule />

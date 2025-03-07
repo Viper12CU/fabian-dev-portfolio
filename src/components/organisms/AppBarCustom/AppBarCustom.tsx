@@ -20,6 +20,7 @@ import { usePathname } from 'next/navigation';
 
 // Molecules
 import NavBar from '@molecules/NavBar';
+import { navClick } from '@utils/controllers';
 
 
 
@@ -125,7 +126,12 @@ function ResponsiveAppBar() {
           </Box>
           <Box>
             {/* Poner la ruta */}
-            <Button variant="contained" color={'secondary'} sx={{ display: { xs: "none", md: "flex" } }}>
+            <Button 
+            variant="contained" 
+            color={'secondary'} 
+            sx={{ display: { xs: "none", md: "flex" } }}
+            onClick={() => navClick("/contactame") }
+            >
               Contactame
             </Button>
           </Box>

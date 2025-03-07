@@ -2,13 +2,17 @@
 
 import React from 'react';
 
-import {Stack} from '@mui/material';
+import { Stack } from '@mui/material';
+
+// Molecules
+import SkillPapersGroup from '@molecules/SkillPapersGroup';
 
 const AboutMePage: React.FC = () => {
     return (
         <Stack>
-            <h1>About Me</h1>
-            <p>This is the about me page.</p>
+            <section id='skills'>
+                <SkillPapersGroup />
+            </section>
         </Stack>
     );
 };

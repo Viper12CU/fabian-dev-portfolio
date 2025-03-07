@@ -1,10 +1,11 @@
 
-import ResponsiveAppBar from "@/components/organisms/AppBarCustom/AppBarCustom";
+
 import theme from "@/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import type { Metadata } from "next";
 
-// Molecules
+// Organisms
+import ResponsiveAppBar from "@organisms/AppBarCustom";
 
 
 
@@ -25,7 +26,7 @@ export default function RootLayout({
     <html lang="en"> 
       <body>
         <ThemeProvider theme={theme}>
-          <CssBaseline/>
+        <CssBaseline/>
         <ResponsiveAppBar />
         {children}
         </ThemeProvider>

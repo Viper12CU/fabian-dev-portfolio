@@ -11,12 +11,10 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-<<<<<<< HEAD
     "@mui/icons-material": "^6.4.6",
     "@mui/material": "^6.4.6",
-=======
-    "@mui/material": "^6.4.5",
->>>>>>> 61904b4a044a16998a6cf20c24adafa2a7fc4b07
+    "@react-spring/web": "^9.7.5",
+    "file-saver": "^2.0.5",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
