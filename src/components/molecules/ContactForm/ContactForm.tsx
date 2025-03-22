@@ -40,7 +40,7 @@ const ContactForm = () => {
 
     const startTimer = () => {
         setLoading(true)
-        setTimeout(handleSubmit, 3000); // 5000 ms = 5 segundos
+        setTimeout(handleSubmit, 3000);
     };
 
     return (

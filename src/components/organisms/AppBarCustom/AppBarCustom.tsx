@@ -106,7 +106,7 @@ function ResponsiveAppBar() {
               {links.map((link) => (
                 <MenuItem key={link.label} onClick={handleCloseNavMenu}>
                   <Link key={link.href} href={link.href} passHref style={{ textDecoration: 'none' }}>
-                    <Typography sx={{ textAlign: 'center' }}>{link.label}</Typography>
+                    <Typography sx={{ textAlign: 'center', color:theme.palette.text.primary }}>{link.label}</Typography>
                   </Link>
                 </MenuItem>
               ))}

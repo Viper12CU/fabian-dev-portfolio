@@ -2,7 +2,7 @@
     p: 5,
     width:"fit-content",
     m: "0 auto",
-    mt: 10,
+    my: 10,
     borderRadius: 4
 
 

@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 
 // Organisms
 import ResponsiveAppBar from "@organisms/AppBarCustom";
+import Footer from "@/components/organisms/Footer/Footer";
 
 
 
@@ -29,6 +30,7 @@ export default function RootLayout({
         <CssBaseline/>
         <ResponsiveAppBar />
         {children}
+        <Footer/>
         </ThemeProvider>
       </body>
     </html>

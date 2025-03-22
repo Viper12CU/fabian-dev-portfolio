@@ -1,7 +1,8 @@
 import { colors } from "@mui/material";
 
 const paperStyle ={
-    maxWidth: "40rem",
+    maxWidth: "45rem",
+    height: "fit-content",
     width: "fit-content",
     borderRadius: 3,
     border: `1px solid ${colors.grey[800]}`,
@@ -13,9 +14,10 @@ const paperStyle ={
     mt: {
         xs: 16,
     },
+    p: 1
 };
 
-const stackStyle = {
+const gridImgStyle = {
     p: 2,
     display: "flex",
     justifyContent: "space-between",
@@ -30,4 +32,4 @@ const buttonStyle = {
 
 
 
-export {paperStyle, stackStyle, buttonStyle};
+export {paperStyle, gridImgStyle, buttonStyle};

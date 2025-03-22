@@ -3,18 +3,13 @@ import LibraryBooksRoundedIcon from '@mui/icons-material/LibraryBooksRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
 import ApiRoundedIcon from '@mui/icons-material/ApiRounded';
-import AccessibilityNewRoundedIcon from '@mui/icons-material/AccessibilityNewRounded';
-import BugReportRoundedIcon from '@mui/icons-material/BugReportRounded';
 import PaletteRoundedIcon from '@mui/icons-material/PaletteRounded';
 import ZoomInMapRoundedIcon from '@mui/icons-material/ZoomInMapRounded';
 import DesignServicesRoundedIcon from '@mui/icons-material/DesignServicesRounded';
 import Groups2RoundedIcon from '@mui/icons-material/Groups2Rounded';
-import ChatRoundedIcon from '@mui/icons-material/ChatRounded';
 import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
-import EmojiObjectsRoundedIcon from '@mui/icons-material/EmojiObjectsRounded';
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded';
 import ScheduleRoundedIcon from '@mui/icons-material/ScheduleRounded';
-import BusinessCenterRoundedIcon from '@mui/icons-material/BusinessCenterRounded';
 import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded';
 import { ReactNode } from 'react';
 
@@ -29,16 +24,14 @@ const skillData: item[] = [
     {
         title: "Dominio de lenguajes básicos",
         data: `Como desarrollador frontend, tengo un dominio sólido de HTML, CSS y JavaScript, 
-        que son la base de cualquier proyecto web. Uso HTML para estructurar el contenido, 
-        CSS para darle estilo y vida visual, y JavaScript para agregar interactividad y dinamismo. 
-        Estas herramientas me permiten crear experiencias de usuario fluidas y atractivas.`,
+        que son la base de cualquier proyecto web. Estas herramientas me permiten crear
+         experiencias de usuario fluidas y atractivas.`,
         icon: <CodeRoundedIcon fontSize="large"/>,
     },
     {
         title: "Experiencia con frameworks y librerías",
-        data: `He trabajado con frameworks como React, Angular y Vue.js, que me permiten 
-        desarrollar aplicaciones modernas y eficientes. Estos frameworks me ayudan a organizar mejor 
-        mi código, reutilizar componentes y mejorar el rendimiento de las aplicaciones. Siempre elijo 
+        data: `He trabajado con frameworks como React, Next Js y Flutter, que me permiten 
+        desarrollar aplicaciones modernas y eficientes. Siempre elijo 
         la herramienta más adecuada para cada proyecto.`,
         icon: <LibraryBooksRoundedIcon fontSize="large"/>,
 
@@ -46,7 +39,7 @@ const skillData: item[] = [
     {
         title: "Manejo de herramientas de control de versiones",
         data: `Uso Git diariamente para gestionar cambios en el código y colaborar con otros 
-        desarrolladores. Plataformas como GitHub o GitLab me permiten trabajar en equipo de 
+        desarrolladores. Plataformas como GitHub me permiten trabajar en equipo de 
         manera efectiva, revisar código y mantener un historial claro de los avances del proyecto.`,
         icon: <GitHubIcon fontSize="large"/>,
     },
@@ -77,21 +70,6 @@ const skillData: item[] = [
 
     },
     {
-        title: "Accesibilidad web (WCAG)",
-        data: `Me aseguro de que las interfaces que desarrollo sean accesibles para 
-        todos los usuarios, incluyendo aquellos con discapacidades. Sigo las pautas WCAG 
-        para garantizar que las aplicaciones sean inclusivas y cumplan con los estándares de accesibilidad.`,
-        icon: <AccessibilityNewRoundedIcon fontSize="large"/>,
-    },
-    {
-        title: "Pruebas y debugging",
-        data: `Realizo pruebas exhaustivas para garantizar la calidad del código. 
-        Utilizo herramientas como Jest y Cypress para pruebas unitarias y de integración, y 
-        DevTools para depurar y resolver errores de manera eficiente. Esto me ayuda a 
-        entregar aplicaciones confiables y libres de bugs.`,
-        icon: <BugReportRoundedIcon fontSize="large"/>,
-    },
-    {
         title: "Colaboración con diseñadores",
         data: `Trabajo estrechamente con diseñadores para implementar interfaces fieles a 
         los diseños proporcionados. Utilizo herramientas como Figma para entender 
@@ -120,25 +98,11 @@ const skillData: item[] = [
         icon: <Groups2RoundedIcon fontSize="large"/>,
     },
     {
-        title: "Comunicación efectiva",
-        data: `Me esfuerzo por comunicarme de manera clara y efectiva con mi equipo.
-         Explico mis ideas, escucho las de los demás y trabajo juntos para resolver 
-         problemas y alcanzar los objetivos del proyecto.`,
-        icon:  <ChatRoundedIcon fontSize="large"/>,
-    },
-    {
         title: "Aprendizaje continuo",
         data: `El desarrollo frontend es un campo en constante evolución, y siempre estoy 
         aprendiendo cosas nuevas. Ya sea un nuevo framework, una herramienta o una mejor 
         práctica, me mantengo actualizado para ofrecer soluciones modernas y efectivas.`,
         icon: <SchoolRoundedIcon fontSize="large"/>,
-    },
-    {
-        title: "Resolución de problemas",
-        data: `Me encanta enfrentar desafíos técnicos. Analizo los problemas desde diferentes 
-        ángulos, identifico la raíz del problema y propongo soluciones efectivas. Esto me 
-        permite superar obstáculos y entregar resultados de calidad.`,
-        icon: <EmojiObjectsRoundedIcon fontSize="large"/>,
     },
     {
         title: "Adaptabilidad",
@@ -154,12 +118,7 @@ const skillData: item[] = [
         según lo planeado.`,
         icon: <ScheduleRoundedIcon fontSize="large"/>,
     },
-    {
-        title: "Alineación con la cultura de la empresa",
-        data: `Me esfuerzo por encajar en la cultura de la empresa y compartir sus valores. 
-        Creo que un buen ambiente de trabajo es clave para el éxito del equipo y del proyecto.`,
-        icon: <BusinessCenterRoundedIcon fontSize="large"/>,
-    },
+
 
     /** 
      * !IPORTANTE: mas data
