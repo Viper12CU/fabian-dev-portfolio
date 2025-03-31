@@ -1,5 +1,5 @@
 
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import theme from "@/theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import type { Metadata, } from "next";
@@ -36,6 +36,7 @@ export default function RootLayout({
         <ResponsiveAppBar />
         {children}
         <Footer/>
+        <SpeedInsights/>
         </ThemeProvider>
       </body>
     </html>
