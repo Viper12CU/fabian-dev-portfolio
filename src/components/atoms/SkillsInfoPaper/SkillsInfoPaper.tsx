@@ -12,7 +12,7 @@ const SkillsInfoPaper: React.FC<SkillsInfoPaperProps> = ({ title, description, i
     return (
         <Paper elevation={3}  sx={{
             width: "314px",
-            height: "360px",
+            height: "320px",
             p: 3,
         }}>
             <Stack direction="column" spacing={1} alignItems="start">

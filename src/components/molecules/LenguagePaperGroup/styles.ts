@@ -10,8 +10,8 @@ const fondoStyle = {
 };
 
 const  motionStyle: React.CSSProperties = {
-    width: "324px",
-    height: "330px",
+    width: "310px",
+    height: "350px",
     position: "absolute",
     top: 0,
     left: 0,

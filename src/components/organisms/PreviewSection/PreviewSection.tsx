@@ -18,7 +18,7 @@ const PreviewSection: React.FC<PreviewSectionProps> = ({ title, buttonText, cont
 
 
     return (
-        <Stack spacing={15} direction="column" alignItems={"center"} sx={{ mt: 15, mb: 15 }}>
+        <Stack spacing={15} direction="column" alignItems={"center"} sx={{ mt: 10, mb: 15 }}>
             <Typography variant="h4" color="secondary" fontWeight={"bold"} >{title}</Typography>
             {content}
             <Button

@@ -14,6 +14,9 @@ const ContactForm = () => {
     const [snackbarOpen, setSnackbarOpen] = useState(false);
     const [loading, setLoading] = React.useState(false);
 
+    // * Editar variable para cuando este disponible el servicio
+    const isEnable = false;
+
 
     const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => setName(e.target.value);
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value);
@@ -40,7 +43,7 @@ const ContactForm = () => {
 
     const startTimer = () => {
         setLoading(true)
-        setTimeout(handleSubmit, 3000);
+        setTimeout(handleSubmit, isEnable ? 3000 : 500);
     };
 
     return (
@@ -55,13 +58,13 @@ const ContactForm = () => {
                     sx={{ p: 1.5, color: 'white', '& .MuiSvgIcon-root': { color: 'white' } }}
                     endIcon={!loading ? <Send /> : null}
                     onClick={startTimer}
-                    loading={loading}
+                    loading={loading && isEnable}
                     loadingIndicator={<Box style={{ color: 'white' }}>Enviando...</Box>}
                 >
                     Enviar
                 </Button>
             </Stack>
-            <Snackbars open={snackbarOpen} onClose={handleSnackbarClose}/>
+            <Snackbars open={snackbarOpen} onClose={handleSnackbarClose} isEnable={isEnable} />
         </Paper>
     );
 };

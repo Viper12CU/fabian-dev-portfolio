@@ -12,7 +12,7 @@ const stackStyle = {
     fontSize: "32px",
     position: 'relative',
     width: '100%',
-    height:{ lg: "39rem", xl: "50rem"}
+    height:{xs: "55rem", sm: "35rem",  xl: "50rem"}
 }
 
 export {boxStyle, stackStyle};
