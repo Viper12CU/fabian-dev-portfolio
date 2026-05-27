@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { LanguageSwitch } from '@/components/atoms/language-switch'
 import { navItems } from '@/utils/sections/nav-items'
 import { siteIdentity } from '@/utils/sections/site-identity'
 
@@ -37,25 +38,31 @@ export function Navbar() {
           {siteIdentity.brand}
         </a>
 
-        <button
-          className="md:hidden flex flex-col gap-1"
-          aria-label="Toggle navigation"
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <span className="block h-0.5 w-6 bg-[var(--stimulus-yellow)]" />
-          <span className="block h-0.5 w-6 bg-[var(--stimulus-yellow)]" />
-          <span className="block h-0.5 w-6 bg-[var(--stimulus-yellow)]" />
-        </button>
+        <div className="flex items-center gap-4 md:hidden">
+          <LanguageSwitch />
+          <button
+            className="flex flex-col gap-1"
+            aria-label="Toggle navigation"
+            onClick={() => setOpen((prev) => !prev)}
+          >
+            <span className="block h-0.5 w-6 bg-[var(--stimulus-yellow)]" />
+            <span className="block h-0.5 w-6 bg-[var(--stimulus-yellow)]" />
+            <span className="block h-0.5 w-6 bg-[var(--stimulus-yellow)]" />
+          </button>
+        </div>
 
-        <ul className="hidden md:flex items-center gap-6">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a className="nav-link" href={item.href}>
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex flex-1 items-center justify-end gap-6">
+          <ul className="flex items-center gap-6">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a className="nav-link" href={item.href}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <LanguageSwitch />
+        </div>
       </div>
 
       {open ? (

@@ -1,16 +1,12 @@
 export const experienceSection = {
-  title: 'My Experiences',
-  subtitle: 'Previous companies and my tasks',
+  title: 'Mi experiencia',
+  subtitle: 'Experiencia laboral relevante',
   items: [
     {
-      title: 'Graphic Designer',
-      period: '2014 Jul - 2015 Sep',
-      copy: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    },
-    {
-      title: 'Web Designer',
-      period: '2015 Oct - 2017 Jan',
-      copy: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      title: 'Full Stack Developer',
+      period: '2024 Dic - 2026 Ene',
+      copy:
+        'Diseño y desarrollo de sitio web oficial, mantenimiento y optimización.',
     },
   ],
 } as const
