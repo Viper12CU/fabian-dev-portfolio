@@ -1,4 +1,5 @@
 import { Icon } from '@/components/atoms/icon'
+import { SocialIcon } from '@/components/atoms/social-icon'
 import { SectionTitle } from '@/components/atoms/section-title'
 import { contactSection } from '@/utils/sections/contact-section-data'
 
@@ -45,10 +46,6 @@ export function ContactSection() {
           <div className="background-image contact-img" />
         </div>
         <div className="md:col-span-3 bg-dark text-white contact-panel">
-          <div className="mb-6">
-            <h3 className="color-white">{contactSection.office.title}</h3>
-            <p className="text-white">{contactSection.office.address}</p>
-          </div>
           <div>
             <h3 className="color-white">{contactSection.contact.title}</h3>
             <p className="text-white">
@@ -60,12 +57,13 @@ export function ContactSection() {
                 {contactSection.contact.email}
               </a>
             </p>
-            <p className="text-white">
-              <Icon name="fa-globe" className="mr-2" />{' '}
-              <a href={contactSection.contact.websiteHref} className="text-white">
-                {contactSection.contact.website}
-              </a>
-            </p>
+          </div>
+          <div className="mt-6 flex justify-center">
+            <ul className="social-icon justify-center">
+              {contactSection.socials.map((social) => (
+                <SocialIcon key={social.icon} href={social.href} icon={social.icon} />
+              ))}
+            </ul>
           </div>
         </div>
       </div>

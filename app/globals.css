@@ -312,6 +312,80 @@
     padding: 100px 0;
   }
 
+  .projects-section {
+    background: url('/stimulus/quotes-bg.jpg') 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 100px 0;
+  }
+
+  .projects-overlay {
+    background: var(--stimulus-orange);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+  }
+
+  .project-card {
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.35);
+  }
+
+  .project-card h3,
+  .project-card p,
+  .project-card span {
+    color: #f6f2eb;
+  }
+
+  .project-card .section-btn {
+    background: var(--stimulus-yellow);
+    border: 2px solid transparent;
+    color: #1b1b1b;
+  }
+
+  .project-card .section-btn:hover {
+    background: var(--stimulus-orange);
+    color: #ffffff;
+  }
+
+  .project-btn-dark.section-btn {
+    background: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .project-btn-dark.section-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+  }
+
+  .project-btn-orange.section-btn {
+    background: transparent;
+    border-color: #1b1b1b;
+    color: #1b1b1b;
+  }
+
+  .project-btn-orange.section-btn:hover {
+    background: rgba(0, 0, 0, 0.12);
+    color: #1b1b1b;
+  }
+
+  .project-btn-light.section-btn {
+    background: transparent;
+    border-color: var(--stimulus-ink);
+    color: var(--stimulus-ink);
+  }
+
+  .project-btn-light.section-btn:hover {
+    background: rgba(0, 0, 0, 0.08);
+    color: var(--stimulus-ink);
+  }
+
   footer {
     padding: 14px 0;
   }
@@ -330,6 +404,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    display: flex;
   }
 
   .social-icon li {
@@ -342,24 +417,28 @@
     color: #999999;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 26px;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
     width: 50px;
     height: 50px;
-    line-height: 50px;
     text-align: center;
-    vertical-align: middle;
     position: relative;
     margin: 22px 4px 10px 4px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    line-height: 1;
+    transform-origin: center;
+  }
+
+  .social-icon li a .fa {
+    display: block;
+    line-height: 1;
   }
 
   .social-icon li a:hover {
     background: var(--stimulus-yellow);
-    border-color: #ffffff;
     color: #ffffff;
     transform: scale(1.1);
   }
